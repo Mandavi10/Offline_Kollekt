@@ -58,6 +58,7 @@ cursor:pointer}
 .mainLogo{width: 100%;
     font-size: 18px;
     font-weight: 600;
+    padding-left: 10px;
     text-shadow: 1px 1px 2px #90a5bb}
 .userName{ text-align: center;
     color: #1f497d;
