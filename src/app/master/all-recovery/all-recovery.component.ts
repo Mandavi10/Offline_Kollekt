@@ -7,7 +7,6 @@ import { AgGridAngular } from 'ag-grid-angular';
 })
 export class AllRecoveryComponent implements OnInit {
   columnDefs = [
- 
     {headerName: 'Sr. No.', field: 'srNo', width:'80'},
     {headerName: 'Mandate ID', field: 'mandateid', width:'150'},
     {headerName: 'Reference ID', field: 'refernceid', width:'150'},
