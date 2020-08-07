@@ -12,4 +12,5 @@ import { AgGridModule } from 'ag-grid-angular';
     AgGridModule.withComponents([])
   ]
 })
+
 export class AllRecoveryModule { }
