@@ -10,7 +10,7 @@ export class AllRecoveryComponent implements OnInit {
     {headerName: 'Sr. No.', field: 'srNo', width:'80'},
     {headerName: 'Mandate ID', field: 'mandateid', width:'150'},
     {headerName: 'Reference ID', field: 'refernceid', width:'150'},
-    {headerName: 'Amount', field: 'amount', width:'150', cellClass: 'price', headerClass:'price' },
+    {headerName: 'Amount', field: 'amount', width:'110', headerClass:'price', cellClass: 'price' },
    
     
 ];

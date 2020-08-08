@@ -1,6 +1,39 @@
-﻿.price{text-align:right !important}
+﻿.bs-datepicker-container{width:80% !important; z-index:9999 !important}
+.bottom, .ng-tns-c44-3, .ng-star-inserted{z-index:9999 !important}
+.subHeading{font-size:14px !important; text-transform:uppercase}
+.price {
+    text-align:right !important}
+    .profit {
+        color: #249e33
+    }
+    .loss {
+        color: #f31313
+    }
+    .fullmaincontainer{position: relative;
+        float: left;
+        width: 100%}
+
+    #createuser .modal-content{height:619px}
+    .menuBar .fa-bars{ display:none}
+
 .modal {
     background: rgba(0,0,0,0.6) !important;
+}
+.modal-header {      
+    background-color: #ffffff;
+  }
+  .modal .close {
+        opacity: 0.8;}
+
+.loaderposition{        position: absolute;
+    z-index: 9999 !important;
+    text-align: center;
+    top: 37%;}
+
+
+.loaderimagepage{margin-left: 45%;margin-top: 19%;width: 8%;}
+.modal-header {
+    border-bottom: 0px solid #e5e5e5;
 }
     .modal .modal-dialog {
     margin:100px auto}
@@ -93,9 +126,16 @@ font-family:"Segoe UI"; }
 .exportExcelBtn:hover {
         color: #fff !important;}
 
-.paginationDiv{position: absolute;
+.paginationDiv{position: fixed;
     right: 0px;
-    bottom: -20px;}
+    bottom: 23px;}
+
+    .downbtnposition{position: absolute !important;
+        right: 26px !important;
+        bottom: 45px !important;}
+    .ag-theme-alpine .ag-ltr .ag-header-select-all {
+        margin-right: 5px !important;
+    }
     .paginationDiv span{font-family: arial;}
 .paginationDiv .previousBtn, .paginationDiv .nextBtn{padding: 3px 8px;
     background: #ddd;
@@ -130,6 +170,10 @@ font-family:"Segoe UI"; }
     height: 30px !important;
     min-height: 30px !important;
 }
+.summaryGrid .ag-theme-alpine .ag-header {
+    height: 0px !important;
+    min-height: 0px !important;
+}
 .ag-theme-alpine .ag-header-row {
     height: 28px !important;
 }
@@ -145,7 +189,8 @@ font-family:"Segoe UI"; }
         font-weight: 600 !important;
         color: #003974 !important;}
 .ag-center-cols-container{ width:100% !important}
-
+.ag-theme-alpine .ag-cell-inline-editing{height:28px !important; padding: 0px !important}
+.ag-center-cols-container{width:2000px !important}
 
 
 .guidetext{color: #e81c26;
@@ -168,16 +213,18 @@ table {
 
     table thead tr th {
         color: #003974 !important;
+        height: 30px;
+        font-size: 13px !important;
+        font-weight: 600;
     }
-
-tr:nth-child(even) {
-    background-color: #ffffff;
-}
+    tfoot{ font-weight: bold;
+        /* background: #f8f8f8; */
+        border-top: 1px solid #ccc;}
 
 
 
 table thead{
-    background-color: #ffffff !important;
+    background-color: #f8f8f8 !important;
     border-bottom: 1px solid #cdcdcd;
 }
     table thead th, table thead td {
@@ -186,6 +233,9 @@ table thead{
     text-align: left;
     padding: 4px;
 }
+.price .ag-header-cell-text {
+    flex: 1; text-align:right;
+    }
 td, th {
     padding: 4px;
 }
@@ -2097,6 +2147,20 @@ pre.prettyprint {
     [class*=vspace-][class*="-sm"] {
         display: block
     }
+  
+        .maincontainer{width:100% !important}
+        .menuBar .fa-bars{ display:block}
+        #sidenav .fa-th{display:none}
+        .dvLinks{ position: absolute !important;
+            width: 165px !important;
+            z-index: 999 !important;
+            background: #fff !important;
+            box-shadow: none !important;
+            max-height: 575px !important;}
+        .breadcrum {
+                margin-left: 17px;}
+            .navbar .navbar-collapse, .navbar .navbar-header {
+                margin-left: 30px !important;}
 }
 
 @media only screen and (max-width: 991px) {
@@ -3049,6 +3113,11 @@ pre.prettyprint {
     }
 }
 
+@media only screen and (max-width: 767px) {
+.navbar .navbar-collapse, .navbar .navbar-header {
+    margin-left: 30px !important;}
+}
+
 @media only screen and (max-width: 480px) {
     .navbar-form .form-group {
         width: 80%
@@ -3066,7 +3135,9 @@ pre.prettyprint {
     .navbar.navbar-collapse {
         background-color: transparent
     }
-
+    .navbar .navbar-collapse, .navbar .navbar-header {
+        margin-left: 0px !important;
+    }
         .navbar.navbar-collapse:before {
             background: #438EB9;
             content: "";
@@ -3452,6 +3523,14 @@ body.mob-safari .sidebar.sidebar-fixed {
     body.mob-safari .navbar-fixed-top:not(.navbar-collapse) + .main-container .sidebar-fixed {
         top: 90px
     }
+
+    #createuser .modal-dialog{
+       width: 100%!important;
+    }
+    #createuser .modal-content{
+        height: 565px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -7254,6 +7333,7 @@ button.btn:active {
         border: 3px solid transparent;
         white-space: nowrap;
         padding: 1px 5px 1px 5px;
+        color:#fff !important;
     }
 
     .btn-success.no-border:active,
@@ -9696,8 +9776,8 @@ table td span i {
     height: -moz-8px;
     width: -o-8px;
     height: -o-8px;
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -12040,7 +12120,8 @@ input.ace + .lbl.padding-0::before {
 .form-group input[type=number],
 .form-group select,
 .form-group textarea {
-    background: #FFF
+    background: #FFF;
+    padding-left: 3px;
 }
 
 .form-group.has-success input,
@@ -24806,7 +24887,7 @@ s.companyddl .logouthover {
 
 .adminddl .dropdown-menu.dropdown-close {
     top: 92%;
-    left: -96px;
+    left: -164px;
     right: 7px;
     width: 180px;
 }
@@ -26668,6 +26749,7 @@ th.dow {
     .banner1 {
         width: 70% !important;
     }
+   
 }
 
 @media only screen and (min-width: 601px) and (max-width: 760px) {
